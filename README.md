@@ -5,6 +5,7 @@ Seshat - A Node.js scrapper
 ## Getting Started
 
 Clone the repository then you can choose to run it with a standalone server or as a Docker container. 
+Before running your project it is necessary to setup a MongoDB connection inside the .env file
 
 ## Run locally as Node.js server
 If you want to locally run as a local node.js server open a terminal and then type 
@@ -22,7 +23,7 @@ $ docker build -t "yourrepo/project" .
 ```
 After it you can run 
 ```console
-$ docker run yourrepo/project -e URL="https://www.myurltoscrap.com"
+$ docker run -e URL="https://www.myurltoscrap.com" yourrepo/project
 ```
 
 
