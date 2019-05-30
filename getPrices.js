@@ -33,8 +33,8 @@ nightmare
 let getData = html => {
     var finalProductsArray = [];
     const $ = cheerio.load(html);
-
-    // Finally get prices
+    /** Doing something with your data */
+    
     $('.search-result-product-title').each((row, raw_element) => {
         var tempObj = {
             "structure": raw_element.children[1].childNodes[1].childNodes[0].data.replace(/\s/g, ''),
